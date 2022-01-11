@@ -64,7 +64,7 @@ class HomeScreenFragment : Fragment(), SearchView.OnQueryTextListener {
         val dateTxv = binding.homescreendateTxv
         val sdf = SimpleDateFormat("EEEE d, LLLL", Locale.getDefault())
         date = sdf.format(cal.time).toString()
-        val dateTxt = "Today,$date"
+        val dateTxt = "Today, $date"
         dateTxv.text = dateTxt
 
         //task recycler setup

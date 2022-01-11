@@ -15,7 +15,7 @@ android {
         targetSdk 31
         versionCode 1
         versionName "1.0"
-
+        vectorDrawables.useSupportLibrary= true
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
     }
 
@@ -78,4 +78,7 @@ dependencies {
 
     //Gif
     implementation 'pl.droidsonroids.gif:android-gif-drawable:1.2.17'
+
+    //Analytics
+    implementation 'com.flurry.android:analytics:13.1.0@aar'
 }

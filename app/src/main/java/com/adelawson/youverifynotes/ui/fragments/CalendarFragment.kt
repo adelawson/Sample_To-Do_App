@@ -122,7 +122,7 @@ class CalendarFragment : Fragment() {
 
 
         val d1: Date = Date.from(currentMonth.atDay(1).atStartOfDay(ZoneId.systemDefault()).toInstant())
-        val d2 = Date.from(currentMonth.plusMonths(3).atDay(31).atStartOfDay(ZoneId.systemDefault()).toInstant())
+        val d2 = Date.from(currentMonth.plusMonths(3).atDay(30).atStartOfDay(ZoneId.systemDefault()).toInstant())
         dates = getDates(d1,d2)
 
         val calendarRecycler = binding.calendarRcv
